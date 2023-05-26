@@ -384,6 +384,7 @@ img {
 .all-footer {
   display: flex;
   align-items: baseline;
+  padding: 0;
 }
 .footer {
   background: var(--dark-color);
@@ -392,8 +393,9 @@ img {
 }
 .footer-container {
   margin: 0;
-  width: 264px;
+  max-width: 264px;
   margin-right: 120px;
+  padding: 0;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -410,27 +412,28 @@ img {
 .footer-logo-end {
   color: var(--light-color);
 }
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
 
 .footer-soc {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  color: var(--white-color);
   margin-bottom: 16px;
-  letter-spacing: 0.02em;
-  color: var(--light-color);
 }
 
 .footer-soc-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 208px;
-  width: 208px;
-  height: 80px;
+  padding-left: 0;
+  margin-left: 0;
 }
 .footer-soc-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
 }
 
