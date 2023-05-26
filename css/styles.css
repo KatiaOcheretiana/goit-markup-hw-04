@@ -85,6 +85,8 @@ img {
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -246,13 +248,15 @@ img {
 }
 
 /* SVG pictures */
-.advantages-icons {
-  width: 264px;
+.advantages-svg-container {
+  display: flex;
   height: 112px;
+  width: 264px;
   background-color: var(--light-color);
   margin-bottom: 8px;
-  display: block;
-  padding: 24px 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 .adv-icon {
 }
@@ -299,12 +303,12 @@ img {
   background: var(--white-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-card {
   padding: 32px 16px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   text-align: center;
 }
 
@@ -360,15 +364,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: var(--fill-customer-icons);
   border: 1px solid var(--fill-customer-icons);
   border-radius: 4px;
 }
 
 .customers-soc-icon {
-  width: 104px;
-  height: 56px;
-  fill: var(--fill-customer-icons);
+  fill: currentColor;
 }
 
 .customers-soc-link:hover {
@@ -381,6 +383,7 @@ img {
 /**-----------FOOTER--------- **/
 .all-footer {
   display: flex;
+  align-items: baseline;
 }
 .footer {
   background: var(--dark-color);
@@ -390,6 +393,7 @@ img {
 .footer-container {
   margin: 0;
   width: 264px;
+  margin-right: 120px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -406,25 +410,20 @@ img {
 .footer-logo-end {
   color: var(--light-color);
 }
-.footer-text {
-  max-width: 264px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--light-color);
-}
 
 .footer-soc {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.5;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
 }
 
 .footer-soc-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 208px;
-  margin-left: 120px;
   width: 208px;
   height: 80px;
 }
