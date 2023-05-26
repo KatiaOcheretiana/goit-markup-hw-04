@@ -373,18 +373,19 @@ img {
   fill: currentColor;
 }
 
-.customers-soc-link:hover {
+.customers-soc-link:hover,
+.customers-soc-link:focus {
   border-color: var(--pressed-color);
 }
 .customers-soc-link:hover .customers-soc-icon {
   fill: var(--pressed-color);
+  border-color: var(--pressed-color);
 }
 
 /**-----------FOOTER--------- **/
 .all-footer {
   display: flex;
   align-items: baseline;
-  padding: 0;
 }
 .footer {
   background: var(--dark-color);
@@ -509,14 +510,18 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
+.card-link {
+  display: block;
+}
+
 .serv-card-footer {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
-.service-card:hover,
-.service-card:focus {
+.card-link:hover,
+.card-link:focus {
   border: 1px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
