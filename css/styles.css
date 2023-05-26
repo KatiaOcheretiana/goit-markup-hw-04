@@ -376,9 +376,10 @@ img {
 .customers-soc-link:hover,
 .customers-soc-link:focus {
   border-color: var(--pressed-color);
+  color: var(--pressed-color);
 }
 .customers-soc-link:hover .customers-soc-icon {
-  fill: var(--pressed-color);
+  color: var(--pressed-color);
   border-color: var(--pressed-color);
 }
 
