@@ -378,10 +378,10 @@ img {
   border-color: var(--pressed-color);
   color: var(--pressed-color);
 }
-.customers-soc-link:hover .customers-soc-icon {
+/* .customers-soc-link:hover .customers-soc-icon {
   color: var(--pressed-color);
   border-color: var(--pressed-color);
-}
+} */
 
 /**-----------FOOTER--------- **/
 .all-footer {
